@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roberto Bertaccini - Interactive CV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#475569',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .tab-content { display: none; }
+        .tab-content.active { display: block; animation: fadeIn 0.5s; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/80 dark:bg-gray-800/80 backdrop-blur-md shadow-sm z-50">
+        <div class="max-w-5xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="font-bold text-xl tracking-tight">RB.</div>
+            <div class="flex gap-4 items-center">
+                <a href="#about" class="hover:text-primary transition">About</a>
+                <a href="#experience" class="hover:text-primary transition">Experience</a>
+                <a href="#skills" class="hover:text-primary transition">Skills</a>
+                <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition">
+                    <i class="fas fa-moon dark:hidden"></i>
+                    <i class="fas fa-sun hidden dark:block text-yellow-400"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-32 pb-20 px-4">
+        <div class="max-w-5xl mx-auto text-center">
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-6 tracking-tight">Roberto Bertaccini</h1>
+            <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-8">Lead System Architect & AI Enthusiast</p>
+            <div class="flex justify-center gap-6 text-gray-600 dark:text-gray-400">
+                <a href="mailto:roberto.bertaccini@gmail.com" class="hover:text-primary transition flex items-center gap-2"><i class="fas fa-envelope"></i> Email</a>
+                <span class="flex items-center gap-2"><i class="fas fa-map-marker-alt"></i> Milan, Italy</span>
+                <span class="flex items-center gap-2"><i class="fas fa-phone"></i> +39 3397344356</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white dark:bg-gray-800">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 border-b-2 border-primary inline-block pb-2">About Me</h2>
+            <p class="text-lg leading-relaxed mb-4">
+                After 25+ years of work in software development, I have gained deep experience in enterprise architecture and software lifecycle management. I started as a freelance, full-stack developer of web applications while graduating in Computer Science.
+            </p>
+            <p class="text-lg leading-relaxed mb-4">
+                During the last 7 years, I have worked as a senior architect on the low-code platform Pega, realizing organizational changes towards digital and autonomous enterprises. I have embraced the AI revolution, naturally adapted to the vibe-coding approach, and accepted the challenges that AI brings to enterprise architecture.
+            </p>
+            <p class="text-lg leading-relaxed">
+                I am proficient with modern agentic AI coding tools like Claude, Antigravity, VScode, Cursor, and agentic AI assistants like OpenClaw or NanoBot.
+            </p>
+        </div>
+    </section>
+
+    <!-- Experience Section (Interactive Tabs) -->
+    <section id="experience" class="py-16">
+        <div class="max-w-5xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 border-b-2 border-primary inline-block pb-2">Experience</h2>
+            
+            <div class="flex flex-col md:flex-row gap-8">
+                <!-- Tabs -->
+                <div class="md:w-1/3 flex flex-col gap-2">
+                    <button class="tab-btn active text-left px-4 py-3 rounded-lg bg-primary text-white font-medium transition" data-target="exp-pega">Pegasystems (2018 - 2026)</button>
+                    <button class="tab-btn text-left px-4 py-3 rounded-lg bg-white dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 font-medium transition" data-target="exp-be">B.E. Solutions (2014 - 2018)</button>
+                    <button class="tab-btn text-left px-4 py-3 rounded-lg bg-white dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 font-medium transition" data-target="exp-ags">A.G.S. (2003 - 2014)</button>
+                    <button class="tab-btn text-left px-4 py-3 rounded-lg bg-white dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 font-medium transition" data-target="exp-sysnet">SysNet & Freelance (1996 - 2003)</button>
+                </div>
+
+                <!-- Content -->
+                <div class="md:w-2/3 bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm">
+                    <div id="exp-pega" class="tab-content active">
+                        <h3 class="text-2xl font-bold">Lead System Architect</h3>
+                        <p class="text-primary font-medium mb-4">Pegasystems | Italy, EMEA, USA</p>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300 mb-4">
+                            <li>Digital transformation of large organizations using Pega Platform.</li>
+                            <li>Architectural design and technical lead over development, test, and release of client-facing, business-critical applications.</li>
+                            <li>Guidance and governance of application modernization including cloud migration, platform upgrades, UI modernization, and performance tuning.</li>
+                            <li>Clients: Ford Motor Company, German Government, UK Ministry of Defense.</li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">Pega 8.x - Infinity '24</span>
+                            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">Constellation</span>
+                            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">Pega GenAI</span>
+                        </div>
+                    </div>
+
+                    <div id="exp-be" class="tab-content">
+                        <h3 class="text-2xl font-bold">Senior Solution Architect</h3>
+                        <p class="text-primary font-medium mb-4">B.E. Solutions | Italy, EMEA</p>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300 mb-4">
+                            <li>System integrator and IT consultancy for banking & insurance industry.</li>
+                            <li>Implementation of an organization-wide loan/mortgage engine module.</li>
+                            <li>Evolution and maintenance of various internal and external web applications.</li>
+                            <li>Clients: Intesa SanPaolo, UniCredit, Banco BPM.</li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full text-sm">Java</span>
+                            <span class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full text-sm">Python</span>
+                            <span class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full text-sm">NodeJS</span>
+                        </div>
+                    </div>
+
+                    <div id="exp-ags" class="tab-content">
+                        <h3 class="text-2xl font-bold">Solution Architect</h3>
+                        <p class="text-primary font-medium mb-4">A.G.S. | Italy, EMEA</p>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300 mb-4">
+                            <li>System integrator and IT consultancy for telco & travel industry.</li>
+                            <li>Implementation of high-volume batch processing mobile calls for billing.</li>
+                            <li>Setup of a data warehouse for deep data analysis of business data.</li>
+                            <li>Clients: Fastweb, Telecom Italia, Amadeus Travel Platform.</li>
+                        </ul>
+                    </div>
+
+                    <div id="exp-sysnet" class="tab-content">
+                        <h3 class="text-2xl font-bold">Senior IT Consultant & Freelance</h3>
+                        <p class="text-primary font-medium mb-4">SysNet & Independent | Italy</p>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300 mb-4">
+                            <li>Developed and deployed home banking and intranet applications.</li>
+                            <li>Application maintenance and modernization of old legacy systems.</li>
+                            <li>Addressed and supported digitalization of processes for various small companies.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Education Section -->
+    <section id="skills" class="py-16 bg-white dark:bg-gray-800">
+        <div class="max-w-5xl mx-auto px-4 grid md:grid-cols-2 gap-12">
+            <div>
+                <h2 class="text-3xl font-bold mb-8 border-b-2 border-primary inline-block pb-2">Education & Certifications</h2>
+                <ul class="space-y-4">
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-graduation-cap text-primary mt-1"></i>
+                        <div>
+                            <p class="font-bold">Master in Computer Science</p>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">State University of Milan (2003)</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-certificate text-primary mt-1"></i>
+                        <div>
+                            <p class="font-bold">Pega Lead System Architect</p>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">PearsonVue (2021)</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-certificate text-primary mt-1"></i>
+                        <div>
+                            <p class="font-bold">TOGAF Practitioner</p>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">OpenGroup (2026)</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-robot text-primary mt-1"></i>
+                        <div>
+                            <p class="font-bold">Vibe Coding with Github Copilot, Claude, CursorAI</p>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">Coursera (2026)</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="text-3xl font-bold mb-8 border-b-2 border-primary inline-block pb-2">Core Skills</h2>
+                <div class="flex flex-wrap gap-3">
+                    <span class="px-4 py-2 bg-gray-100 dark:bg-gray-700 rounded-lg font-medium">Pega Infinity & Constellation</span>
+                    <span class="px-4 py-2 bg-gray-100 dark:bg-gray-700 rounded-lg font-medium">Agentic AI (Claude, Cursor)</span>
+                    <span class="px-4 py-2 bg-gray-100 dark:bg-gray-700 rounded-lg font-medium">Cloud Migration</span>
+                    <span class="px-4 py-2 bg-gray-100 dark:bg-gray-700 rounded-lg font-medium">DevOps & CI/CD</span>
+                    <span class="px-4 py-2 bg-gray-100 dark:bg-gray-700 rounded-lg font-medium">Java / Python / NodeJS</span>
+                    <span class="px-4 py-2 bg-gray-100 dark:bg-gray-700 rounded-lg font-medium">Enterprise Architecture</span>
+                    <span class="px-4 py-2 bg-gray-100 dark:bg-gray-700 rounded-lg font-medium">Agile / Scrum</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-8 text-center">
+        <p>&copy; 2026 Roberto Bertaccini. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Dark Mode Toggle
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+        
+        // Check system preference
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            html.classList.add('dark');
+        }
+
+        themeToggleBtn.addEventListener('click', () => {
+            html.classList.toggle('dark');
+        });
+
+        // Tabs Logic
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all
+                tabBtns.forEach(b => {
+                    b.classList.remove('bg-primary', 'text-white');
+                    b.classList.add('bg-white', 'dark:bg-gray-800', 'text-gray-900', 'dark:text-gray-100');
+                });
+                tabContents.forEach(c => c.classList.remove('active'));
+
+                // Add active class to clicked
+                btn.classList.remove('bg-white', 'dark:bg-gray-800', 'text-gray-900', 'dark:text-gray-100');
+                btn.classList.add('bg-primary', 'text-white');
+                const target = document.getElementById(btn.dataset.target);
+                target.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
