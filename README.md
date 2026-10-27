@@ -13,4 +13,4 @@ Simply open `index.html` in any modern web browser.
 
 ## Author
 Roberto Bertaccini
-Lead System Architect & AI Enthusiast
+Enterprise Architect

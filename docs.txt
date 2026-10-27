@@ -1,0 +1,20 @@
+Roberto Bertaccini - Enterprise Architect
+
+This document is intended for screening tools and parsers that prefer plain text over HTML markup.
+
+Profile:
+- 25+ years in software development and architecture
+- Focus on Pega, enterprise transformation, cloud migration, and AI-driven delivery
+- Based in Milan, Italy
+
+Key competencies:
+- Enterprise architecture
+- Low-code and Pega development
+- DevOps and CI/CD
+- Cloud migration and modernization
+- AI-assisted development workflows
+- Agile delivery
+
+References:
+- https://www.linkedin.com/in/bertax/
+- roberto.bertaccini@gmail.com

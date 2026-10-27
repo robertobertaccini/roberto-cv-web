@@ -1,0 +1,26 @@
+{
+  "name": "Roberto Bertaccini",
+  "title": "Enterprise Architect",
+  "location": "Milan, Italy",
+  "email": "roberto.bertaccini@gmail.com",
+  "phone": "+39 3397344356",
+  "linkedin": "https://www.linkedin.com/in/bertax/",
+  "summary": "Enterprise Architect with 25+ years of experience in software development, enterprise architecture, low-code digital transformation, AI-assisted coding, and cloud modernization.",
+  "skills": [
+    "Pega Infinity & Constellation",
+    "Enterprise Architecture",
+    "Cloud Migration",
+    "DevOps & CI/CD",
+    "Java / Python / NodeJS",
+    "Agentic AI (Claude, Cursor)",
+    "Agile / Scrum"
+  ],
+  "certifications": [
+    "Pega Lead System Architect",
+    "TOGAF Practitioner",
+    "Vibe Coding with GitHub Copilot, Claude, CursorAI"
+  ],
+  "education": [
+    "Master in Computer Science, State University of Milan (2003)"
+  ]
+}

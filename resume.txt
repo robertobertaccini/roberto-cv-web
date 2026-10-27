@@ -1,0 +1,27 @@
+Roberto Bertaccini
+Enterprise Architect
+
+Summary:
+Enterprise Architect with 25+ years of software development experience, specializing in low-code platforms, enterprise architecture, cloud migration, and AI-assisted software delivery.
+
+Contact:
+- Email: roberto.bertaccini@gmail.com
+- Location: Milan, Italy
+- Phone: +39 3397344356
+- LinkedIn: https://www.linkedin.com/in/bertax/
+
+Experience:
+- Lead System Architect, Pegasystems, 2025 - 2026
+- Senior Architect, Pega and enterprise transformation, 2018 - 2025
+- B.E. Solutions, 2014 - 2018
+- A.G.S., 2003 - 2014
+- SysNet & Freelance, 1996 - 2003
+
+Skills:
+Pega Infinity & Constellation, Agentic AI (Claude, Cursor), Cloud Migration, DevOps & CI/CD, Java, Python, NodeJS, Enterprise Architecture, Agile / Scrum
+
+Education & Certifications:
+- Master in Computer Science, State University of Milan (2003)
+- Pega Lead System Architect (2021)
+- TOGAF Practitioner (2026)
+- Vibe Coding with GitHub Copilot, Claude, CursorAI (2026)
